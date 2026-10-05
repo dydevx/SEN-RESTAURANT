@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung | SEN Restaurant Offenburg</title>
+  <meta name="description" content="Datenschutzerklärung des SEN Restaurant in Offenburg. Umfassende DSGVO-konforme Informationen über die Verarbeitung Ihrer personenbezogenen Daten.">
+  <meta name="robots" content="noindex, follow">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/favicon-192.png">
+  
+  <!-- Main Project Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Legal Page Specific Styles -->
+  <style>
+    /* Legal Header Bar */
+    .legal-header {
+      background: var(--color-dark, #171714);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(183, 154, 99, 0.2);
+    }
+    
+    .legal-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    .legal-header .back-link {
+      color: var(--color-gold, #b79a63);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .legal-header .back-link:hover {
+      color: var(--color-gold-light, #d4b87a);
+      transform: translateX(-4px);
+    }
+
+    .legal-header .back-link svg {
+      transition: transform 0.3s ease;
+    }
+
+    .legal-header .back-link:hover svg {
+      transform: translateX(-2px);
+    }
+
+    .logo .legal-logo-mark {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      object-fit: contain;
+      vertical-align: middle;
+    }
+    
+    /* Legal Main Content */
+    .legal-content {
+      padding: 80px 0;
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: calc(100vh - 450px);
+    }
+    
+    .legal-content h1 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--color-dark, #171714);
+      position: relative;
+    }
+
+    .legal-content h1::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: var(--color-gold, #b79a63);
+      margin-top: 15px;
+    }
+    
+    .legal-content h2 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 1.5rem;
+      margin-top: 45px;
+      margin-bottom: 18px;
+      color: var(--color-dark, #171714);
+      border-bottom: 1px solid rgba(183, 154, 99, 0.2);
+      padding-bottom: 8px;
+    }
+
+    .legal-content h3 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 1.25rem;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      color: var(--color-dark, #171714);
+    }
+
+    .legal-content h4 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: var(--color-dark, #171714);
+    }
+    
+    .legal-content p {
+      margin-bottom: 16px;
+      line-height: 1.8;
+      color: var(--color-text, #2a2a2a);
+      font-size: 1rem;
+    }
+
+    .legal-content address {
+      font-style: normal;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: var(--color-text, #2a2a2a);
+    }
+    
+    .legal-content ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    
+    .legal-content li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+      color: var(--color-text, #2a2a2a);
+    }
+
+    .legal-content a {
+      color: var(--color-gold, #b79a63);
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .legal-content a:hover {
+      color: var(--color-green, #27382d);
+    }
+
+    .placeholder {
+      background: rgba(183, 154, 99, 0.15);
+      padding: 2px 8px;
+      border-radius: 3px;
+      color: var(--color-gold, #b79a63);
+      font-weight: 600;
+      display: inline-block;
+      border: 1px dashed rgba(183, 154, 99, 0.4);
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.65);
+      border: 1px solid var(--color-border, rgba(183, 154, 99, 0.2));
+      border-left: 4px solid var(--color-gold, #b79a63);
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .legal-content {
+        padding: 50px 0;
+      }
+
+      .legal-content h1 {
+        font-size: 2rem;
+      }
+
+      .legal-content h2 {
+        font-size: 1.35rem;
+      }
+
+      .legal-header .back-link span {
+        display: none;
+      }
+
+      .legal-header .back-link::after {
+        content: 'Startseite';
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <!-- Simplified Header with Logo and Back Link -->
+  <header class="legal-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="SEN Restaurant Startseite"><img class="legal-logo-mark" src="assets/brand/sen-logo-mark.png" alt="" width="40" height="40">SEN <span>Restaurant</span></a>
+      <a href="index.html" class="back-link" title="Zurück zur Startseite">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Zurück zur Startseite</span>
+      </a>
+    </div>
+  </header>
+  
+  <!-- Main Content Area -->
+  <main class="legal-content">
+    <div class="container">
+      <h1>Datenschutzerklärung</h1>
+
+      <!-- Section 1 -->
+      <h2>1. Datenschutz auf einen Blick</h2>
+
+      <h3>Allgemeine Hinweise</h3>
+      <p>
+        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+      </p>
+
+      <h3>Datenerfassung auf dieser Website</h3>
+      <div class="info-box">
+        <p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+        <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle“ in dieser Datenschutzerklärung sowie unserem Impressum entnehmen.</p>
+      </div>
+
+      <p><strong>Wie erfassen wir Ihre Daten?</strong></p>
+      <p>
+        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie in ein Kontakt- oder Reservierungsformular eingeben oder uns per E-Mail zusenden.
+      </p>
+      <p>
+        Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+      </p>
+
+      <p><strong>Wofür nutzen wir Ihre Daten?</strong></p>
+      <p>
+        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Bearbeitung Ihrer Tischreservierungs- oder Kontaktanfragen verwendet werden.
+      </p>
+
+      <p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
+      <p>
+        Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Zudem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen sowie ein Beschwerderecht bei der zuständigen Aufsichtsbehörde.
+      </p>
+
+      <h3>Analyse-Tools und Tools von Drittanbietern</h3>
+      <p>
+        Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Dies geschieht vor allem mit sogenannten Analyseprogrammen. Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung.
+      </p>
+
+      <!-- Section 2 -->
+      <h2>2. Allgemeine Hinweise und Pflichtinformationen</h2>
+
+      <h3>Datenschutz</h3>
+      <p>
+        Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+      </p>
+      <p>
+        Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
+      </p>
+      <p>
+        Wir weisen darauf hin, dass die Datenübertragung im Internet (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+      </p>
+
+      <h3>Hinweis zur verantwortlichen Stelle</h3>
+      <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+      <address class="info-box">
+        <strong>SEN Restaurant</strong><br>
+        Lange Straße 51<br>
+        77652 Offenburg<br>
+        Deutschland<br><br>
+        Telefon: <span class="placeholder">[TELEFONNUMMER HIER EINFÜGEN]</span><br>
+        E-Mail: <span class="placeholder">[E-MAIL HIER EINFÜGEN]</span>
+      </address>
+      <p>
+        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-Adressen o.&nbsp;Ä.) entscheidet.
+      </p>
+
+      <h3>Speicherdauer</h3>
+      <p>
+        Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschangebot geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.&nbsp;B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
+      </p>
+
+      <h3>Rechtsgrundlagen der Datenverarbeitung</h3>
+      <p>
+        Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO.
+      </p>
+      <p>
+        Sofern die Verarbeitung zur Erfüllung eines Vertrags oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist (z.&nbsp;B. bei Tischreservierungen), verarbeiten wir Ihre Daten auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern dies zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen.
+      </p>
+
+      <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+      <p>
+        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+      </p>
+
+      <h3>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+      <div class="info-box">
+        <p>
+          WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG.
+        </p>
+        <p>
+          WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
+        </p>
+      </div>
+
+      <h3>Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+      <p>
+        Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+      </p>
+      <p>
+        Die zuständige Aufsichtsbehörde für Baden-Württemberg ist:<br>
+        <strong>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</strong><br>
+        Lautenschlagerstraße 20, 70173 Stuttgart<br>
+        Website: <a href="https://www.baden-wuerttemberg.datenschutz.de/" target="_blank" rel="noopener noreferrer">https://www.baden-wuerttemberg.datenschutz.de/</a>
+      </p>
+
+      <h3>Recht auf Datenübertragbarkeit</h3>
+      <p>
+        Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.
+      </p>
+
+      <h3>SSL- bzw. TLS-Verschlüsselung</h3>
+      <p>
+        Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Reservierungsanfragen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+      </p>
+      <p>
+        Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+      </p>
+
+      <h3>Auskunft, Berichtigung und Löschung</h3>
+      <p>
+        Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+      </p>
+
+      <h3>Recht auf Einschränkung der Verarbeitung</h3>
+      <p>
+        Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:
+      </p>
+      <ul>
+        <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+        <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+        <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+        <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+      </ul>
+
+      <!-- Section 3 -->
+      <h2>3. Datenerfassung auf unserer Website</h2>
+
+      <h3>Cookies</h3>
+      <p>
+        Unsere Internetseiten verwenden gegebenenfalls sogenannte „Cookies“. Cookies sind kleine Datenpakete und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.
+      </p>
+      <p>
+        Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs, zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.&nbsp;B. für die Reservierungsfunktion) oder zur Optimierung der Website (z.&nbsp;B. Cookies zur Messung des Webpublikums) erforderlich sind (notwendige Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von notwendigen Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste.
+      </p>
+
+      <h3>Server-Log-Dateien</h3>
+      <p>
+        Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+      </p>
+      <ul>
+        <li>Browsertyp und Browserversion</li>
+        <li>verwendetes Betriebssystem</li>
+        <li>Referrer URL (die zuvor besuchte Seite)</li>
+        <li>Hostname des zugreifenden Rechners</li>
+        <li>Uhrzeit der Serveranfrage</li>
+        <li>IP-Adresse (in der Regel anonymisiert)</li>
+      </ul>
+      <p>
+        Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+      </p>
+      <p>
+        Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website. Hierzu müssen die Server-Log-Files erfasst werden.
+      </p>
+
+      <h3>Kontaktformular und E-Mail-Kontakt</h3>
+      <p>
+        Wenn Sie uns per Kontaktformular oder per E-Mail Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+      </p>
+      <p>
+        Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), sofern diese abgefragt wurde.
+      </p>
+
+      <h3>Tischreservierungen</h3>
+      <p>
+        Über unsere Website bieten wir Ihnen die Möglichkeit, Tischreservierungen online anzufragen. Die dabei erhobenen Daten (Name, E-Mail-Adresse, Telefonnummer, Datum, Uhrzeit, Personenanzahl sowie eventuelle Anmerkungen) werden ausschließlich zum Zweck der Reservierungsabwicklung und Kontaktaufnahme bei Rückfragen verwendet.
+      </p>
+      <p>
+        Die Verarbeitung erfolgt zur Erfüllung vorvertraglicher bzw. vertraglicher Maßnahmen gemäß Art. 6 Abs. 1 lit. b DSGVO. Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.
+      </p>
+
+      <!-- Section 4 -->
+      <h2>4. Analyse-Tools und Werbung</h2>
+
+      <h3>Web-Analyse</h3>
+      <p>
+        <span class="placeholder">[ANALYSE-TOOLS PLATZHALTER - Z. B. GOOGLE ANALYTICS ODER MATOMO, SOFERN VERWENDET]</span>
+      </p>
+      <p>
+        <em>Hinweis: Auf dieser Website werden derzeit keine externen Tracking- oder Webanalysedienste eingesetzt, die das Nutzerverhalten über Webseiten hinweg ohne Einwilligung verfolgen. Sollten in Zukunft solche Tools eingesetzt werden, wird diese Erklärung entsprechend aktualisiert und gegebenenfalls ein entsprechendes Cookie-Einwilligungsbanner (Consent Management) vorgeschaltet.</em>
+      </p>
+
+      <h3>Google Web Fonts (lokale oder datenschutzkonforme Einbindung)</h3>
+      <p>
+        Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
+      </p>
+      <p>
+        Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt. Weitere Informationen zu Google Web Fonts finden Sie unter <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer">https://developers.google.com/fonts/faq</a> und in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.
+      </p>
+
+      <h3>Kartenmaterial (Google Maps / OpenStreetMap)</h3>
+      <p>
+        <span class="placeholder">[KARTENDIENST PLATZHALTER - Z. B. GOOGLE MAPS ODER OPENSTREETMAP, SOFERN INTERAKTIV EINGEBUNDEN]</span>
+      </p>
+      <p>
+        <em>Hinweis: Sollte eine interaktive Karte zur Anfahrtsbeschreibung eingebunden werden, geschieht dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer leichten Auffindbarkeit unserer Gastronomie) bzw. nach vorheriger Bestätigung im Consent-Banner.</em>
+      </p>
+
+      <!-- Section 5 -->
+      <h2>5. Ihre Rechte als betroffene Person</h2>
+      <p>
+        Nach der Datenschutz-Grundverordnung (DSGVO) stehen Ihnen als betroffene Person folgende Rechte zu:
+      </p>
+      <ul>
+        <li><strong>Auskunftsrecht (Art. 15 DSGVO):</strong> Sie haben das Recht, eine Bestätigung darüber zu verlangen, ob wir Sie betreffende personenbezogene Daten verarbeiten, und Auskunft über diese Daten sowie weitere Informationen zu erhalten.</li>
+        <li><strong>Berichtigungsrecht (Art. 16 DSGVO):</strong> Sie haben das Recht, unverzüglich die Berichtigung unrichtiger Daten oder die Vervollständigung Ihrer bei uns gespeicherten Daten zu verlangen.</li>
+        <li><strong>Recht auf Löschung („Recht auf Vergessenwerden“, Art. 17 DSGVO):</strong> Sie haben das Recht, die unverzügliche Löschung Ihrer personenbezogenen Daten zu verlangen, sofern einer der gesetzlichen Gründe zutrifft.</li>
+        <li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO):</strong> Sie haben das Recht, die Einschränkung der Verarbeitung zu verlangen, wenn eine der gesetzlichen Voraussetzungen gegeben ist.</li>
+        <li><strong>Recht auf Datenübertragbarkeit (Art. 20 DSGVO):</strong> Sie haben das Recht, die Sie betreffenden Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</li>
+        <li><strong>Widerspruchsrecht (Art. 21 DSGVO):</strong> Sie können jederzeit aus Gründen, die sich aus Ihrer besonderen Situation ergeben, Widerspruch gegen die Verarbeitung einlegen.</li>
+        <li><strong>Widerruf von Einwilligungen (Art. 7 Abs. 3 DSGVO):</strong> Sie können erteilte Einwilligungen jederzeit mit Wirkung für die Zukunft formlos widerrufen.</li>
+        <li><strong>Beschwerderecht (Art. 77 DSGVO):</strong> Sie haben das Recht auf Beschwerde bei einer Aufsichtsbehörde, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen die DSGVO verstößt.</li>
+      </ul>
+      <p>
+        Zur Ausübung Ihrer Rechte wenden Sie sich bitte formlos an die unter Abschnitt 2 angegebene verantwortliche Stelle:
+      </p>
+      <div class="contact-block info-box">
+        <p><strong>SEN Restaurant</strong> - Datenschutzanfragen</p>
+        <p>Lange Straße 51, 77652 Offenburg</p>
+        <p>E-Mail: <span class="placeholder">[E-MAIL HIER EINFÜGEN]</span></p>
+      </div>
+
+      <p style="margin-top: 40px; font-size: 0.9rem; color: var(--color-text-light, #888888);">
+        <em>Stand dieser Datenschutzerklärung: Oktober 2026 / Version 1.0</em>
+      </p>
+    </div>
+  </main>
+  
+  <!-- Footer (matching main website) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo"><img class="legal-logo-mark" src="assets/brand/sen-logo-mark.png" alt="" width="40" height="40" loading="lazy">SEN <span>Restaurant</span></a>
+          <p>Authentische vietnamesische und asiatische Spezialitäten in modernem und warmem Ambiente im Herzen von Offenburg.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html#home">Startseite</a></li>
+            <li class="footer-link"><a href="index.html#about">Über uns</a></li>
+            <li class="footer-link"><a href="index.html#menu">Speisekarte</a></li>
+            <li class="footer-link"><a href="index.html#gallery">Galerie</a></li>
+            <li class="footer-link"><a href="index.html#reservation">Reservierung</a></li>
+            <li class="footer-link"><a href="index.html#contact">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Opening Hours -->
+        <div class="footer-col">
+          <h3>Öffnungszeiten</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><span>Di - Fr: 11:30 - 14:30 Uhr</span></li>
+            <li class="footer-link"><span>Di - Fr: 17:30 - 22:30 Uhr</span></li>
+            <li class="footer-link"><span>Sa - So: 12:00 - 23:00 Uhr</span></li>
+            <li class="footer-link"><span>Montag: Ruhetag</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Legal & Contact -->
+        <div class="footer-col">
+          <h3>Rechtliches</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="impressum.html">Impressum</a></li>
+            <li class="footer-link"><a href="datenschutz.html">Datenschutz</a></li>
+            <li class="footer-link"><a href="index.html#contact">Anfahrt & Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> SEN Restaurant Offenburg. Alle Rechte vorbehalten.</p>
+        <div class="footer-credit">
+          <span>Lange Straße 51, 77652 Offenburg &bull; <a href="impressum.html">Impressum</a> &bull; <a href="datenschutz.html">Datenschutz</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for copyright year and global behavior -->
+  <script src="js/main.js"></script>
+</body>
+</html>

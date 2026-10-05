@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | SEN Restaurant Offenburg</title>
+  <meta name="description" content="Impressum und rechtliche Angaben des SEN Restaurant in Offenburg gemäß § 5 TMG. Kontakt, Vertretungsberechtigte und rechtliche Hinweise.">
+  <meta name="robots" content="noindex, follow">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/favicon-192.png">
+  
+  <!-- Main Project Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Legal Page Specific Styles -->
+  <style>
+    /* Legal Header Bar */
+    .legal-header {
+      background: var(--color-dark, #171714);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(183, 154, 99, 0.2);
+    }
+    
+    .legal-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    .legal-header .back-link {
+      color: var(--color-gold, #b79a63);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .legal-header .back-link:hover {
+      color: var(--color-gold-light, #d4b87a);
+      transform: translateX(-4px);
+    }
+
+    .legal-header .back-link svg {
+      transition: transform 0.3s ease;
+    }
+
+    .legal-header .back-link:hover svg {
+      transform: translateX(-2px);
+    }
+
+    .logo .legal-logo-mark {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      object-fit: contain;
+      vertical-align: middle;
+    }
+    
+    /* Legal Main Content */
+    .legal-content {
+      padding: 80px 0;
+      max-width: 800px;
+      margin: 0 auto;
+      min-height: calc(100vh - 450px);
+    }
+    
+    .legal-content h1 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--color-dark, #171714);
+      position: relative;
+    }
+
+    .legal-content h1::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: var(--color-gold, #b79a63);
+      margin-top: 15px;
+    }
+    
+    .legal-content h2 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 1.5rem;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      color: var(--color-dark, #171714);
+      border-bottom: 1px solid rgba(183, 154, 99, 0.2);
+      padding-bottom: 8px;
+    }
+
+    .legal-content h3 {
+      font-family: var(--font-heading, 'Playfair Display', serif);
+      font-size: 1.2rem;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: var(--color-dark, #171714);
+    }
+    
+    .legal-content p {
+      margin-bottom: 16px;
+      line-height: 1.8;
+      color: var(--color-text, #2a2a2a);
+      font-size: 1rem;
+    }
+
+    .legal-content address {
+      font-style: normal;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: var(--color-text, #2a2a2a);
+    }
+    
+    .legal-content ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+    
+    .legal-content li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+      color: var(--color-text, #2a2a2a);
+    }
+
+    .legal-content a {
+      color: var(--color-gold, #b79a63);
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+
+    .legal-content a:hover {
+      color: var(--color-green, #27382d);
+    }
+
+    .placeholder {
+      background: rgba(183, 154, 99, 0.15);
+      padding: 2px 8px;
+      border-radius: 3px;
+      color: var(--color-gold, #b79a63);
+      font-weight: 600;
+      display: inline-block;
+      border: 1px dashed rgba(183, 154, 99, 0.4);
+    }
+
+    .contact-block {
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid var(--color-border, rgba(183, 154, 99, 0.2));
+      border-radius: 6px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+
+    .contact-block p {
+      margin-bottom: 8px;
+    }
+
+    .contact-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      .legal-content {
+        padding: 50px 0;
+      }
+
+      .legal-content h1 {
+        font-size: 2rem;
+      }
+
+      .legal-content h2 {
+        font-size: 1.35rem;
+      }
+
+      .legal-header .back-link span {
+        display: none;
+      }
+
+      .legal-header .back-link::after {
+        content: 'Startseite';
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/premium.css">
+</head>
+<body>
+  <!-- Simplified Header with Logo and Back Link -->
+  <header class="legal-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="SEN Restaurant Startseite"><img class="legal-logo-mark" src="assets/brand/sen-logo-mark.png" alt="" width="40" height="40">SEN <span>Restaurant</span></a>
+      <a href="index.html" class="back-link" title="Zurück zur Startseite">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Zurück zur Startseite</span>
+      </a>
+    </div>
+  </header>
+  
+  <!-- Main Content Area -->
+  <main class="legal-content">
+    <div class="container">
+      <h1>Impressum</h1>
+
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <address>
+        <strong>SEN Restaurant</strong><br>
+        Lange Straße 51<br>
+        77652 Offenburg<br>
+        Deutschland
+      </address>
+
+      <h2>Kontakt</h2>
+      <div class="contact-block">
+        <p><strong>Telefon:</strong> <span class="placeholder">[TELEFONNUMMER HIER EINFÜGEN]</span></p>
+        <p><strong>E-Mail:</strong> <span class="placeholder">[E-MAIL HIER EINFÜGEN]</span></p>
+      </div>
+
+      <h2>Umsatzsteuer-ID</h2>
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+        <span class="placeholder">[UST-ID HIER EINFÜGEN]</span>
+      </p>
+
+      <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+      <address>
+        <span class="placeholder">[NAME HIER EINFÜGEN]</span><br>
+        Lange Straße 51<br>
+        77652 Offenburg<br>
+        Deutschland
+      </address>
+
+      <h2>EU-Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: 
+        <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr/</a>.<br>
+        Unsere E-Mail-Adresse finden Sie oben im Impressum.
+      </p>
+
+      <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Haftungsausschluss (Disclaimer)</h2>
+
+      <h3>Haftung für Inhalte</h3>
+      <p>
+        Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+      <p>
+        Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+      </p>
+
+      <h3>Haftung für Links</h3>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+      </p>
+      <p>
+        Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+      </p>
+
+      <h3>Urheberrecht</h3>
+      <p>
+        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+      </p>
+      <p>
+        Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+      </p>
+    </div>
+  </main>
+  
+  <!-- Footer (matching main website) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand Info -->
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo"><img class="legal-logo-mark" src="assets/brand/sen-logo-mark.png" alt="" width="40" height="40" loading="lazy">SEN <span>Restaurant</span></a>
+          <p>Authentische vietnamesische und asiatische Spezialitäten in modernem und warmem Ambiente im Herzen von Offenburg.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="index.html#home">Startseite</a></li>
+            <li class="footer-link"><a href="index.html#about">Über uns</a></li>
+            <li class="footer-link"><a href="index.html#menu">Speisekarte</a></li>
+            <li class="footer-link"><a href="index.html#gallery">Galerie</a></li>
+            <li class="footer-link"><a href="index.html#reservation">Reservierung</a></li>
+            <li class="footer-link"><a href="index.html#contact">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Opening Hours -->
+        <div class="footer-col">
+          <h3>Öffnungszeiten</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><span>Di - Fr: 11:30 - 14:30 Uhr</span></li>
+            <li class="footer-link"><span>Di - Fr: 17:30 - 22:30 Uhr</span></li>
+            <li class="footer-link"><span>Sa - So: 12:00 - 23:00 Uhr</span></li>
+            <li class="footer-link"><span>Montag: Ruhetag</span></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Legal & Contact -->
+        <div class="footer-col">
+          <h3>Rechtliches</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="impressum.html">Impressum</a></li>
+            <li class="footer-link"><a href="datenschutz.html">Datenschutz</a></li>
+            <li class="footer-link"><a href="index.html#contact">Anfahrt & Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> SEN Restaurant Offenburg. Alle Rechte vorbehalten.</p>
+        <div class="footer-credit">
+          <span>Lange Straße 51, 77652 Offenburg &bull; <a href="impressum.html">Impressum</a> &bull; <a href="datenschutz.html">Datenschutz</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for copyright year and global behavior -->
+  <script src="js/main.js"></script>
+</body>
+</html>
