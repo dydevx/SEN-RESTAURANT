@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title">
+  <title id="title">SEN lotus mark</title>
+  <defs>
+    <linearGradient id="sen-gold" x1="24" y1="190" x2="278" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a66c1d"/>
+      <stop offset="0.42" stop-color="#f0d84f"/>
+      <stop offset="0.7" stop-color="#fff178"/>
+      <stop offset="1" stop-color="#b77c25"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#sen-gold)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M160 206C128 173 127 103 160 30C193 103 192 173 160 206Z"/>
+    <path d="M160 206C113 181 79 112 92 59C133 71 159 119 160 206Z"/>
+    <path d="M160 206C207 181 241 112 228 59C187 71 161 119 160 206Z"/>
+    <path d="M160 206C101 207 43 165 31 96C87 88 137 127 160 206Z"/>
+    <path d="M160 206C219 207 277 165 289 96C233 88 183 127 160 206Z"/>
+  </g>
+</svg>

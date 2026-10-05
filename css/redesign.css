@@ -476,7 +476,7 @@ a {
   z-index: 2;
   width: clamp(58px, 5.5vw, 82px);
   aspect-ratio: 1;
-  background: url('../assets/brand/sen-logo-mark.png') center / contain no-repeat;
+  background: url('../assets/brand/sen-lotus-mark.svg') center / contain no-repeat;
   filter: drop-shadow(0 12px 24px rgba(7, 14, 11, 0.34));
   pointer-events: none;
 }
@@ -851,7 +851,7 @@ a {
   right: clamp(-110px, -5vw, -54px);
   width: clamp(190px, 20vw, 320px);
   aspect-ratio: 1;
-  background: url('../assets/brand/sen-logo-mark.png') center / contain no-repeat;
+  background: url('../assets/brand/sen-lotus-mark.svg') center / contain no-repeat;
   opacity: 0.045;
   pointer-events: none;
 }
