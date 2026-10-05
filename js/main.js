@@ -158,37 +158,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const menuImages = {
-        appetizers: { src: 'assets/images/sen-vorspeisen.jpg', alt: 'Auswahl vietnamesischer Vorspeisen' },
-        edamame: { src: 'assets/images/menu-edamame.jpg', alt: 'Edamame und kleine asiatische Vorspeisen' },
-        summerRolls: { src: 'assets/images/menu-goi-cuon.jpg', alt: 'Vietnamesische Sommerrollen mit frischen Kräutern' },
-        gyoza: { src: 'assets/images/menu-gyoza-premium.png', alt: 'Fünf goldbraun gebratene Gyoza mit Dip' },
-        haCao: { src: 'assets/images/menu-ha-cao-premium.png', alt: 'Fünf gedämpfte Ha Cao mit Garnelenfüllung' },
-        nemRan: { src: 'assets/images/menu-nem-ran-premium.png', alt: 'Drei knusprige vietnamesische Nem Rán mit Kräutern' },
-        seafood: { src: 'assets/images/sen-meeresfruechte.jpg', alt: 'Gegrillte asiatische Meeresfrüchte' },
-        salad: { src: 'assets/images/menu-mango-avocado-salad.png', alt: 'Mango-Avocado-Salat mit Kräutern und Erdnüssen' },
-        coconutSoup: { src: 'assets/images/menu-kokos-suppe.png', alt: 'Cremige Kokos-Suppe mit Pilzen und frischen Kräutern' },
-        pho: { src: 'assets/images/sen-pho.jpg', alt: 'Aromatische vietnamesische Phở-Suppe' },
-        phoBeef: { src: 'assets/images/menu-pho-rind.jpg', alt: 'Vietnamesische Phở-Suppe mit Rindfleisch und Kräutern' },
-        sushi: { src: 'assets/images/sen-sushi-sashimi.jpg', alt: 'Auswahl an Sushi, Nigiri und Sashimi' },
-        sushiRoll: { src: 'assets/images/menu-salmon-crunchy.jpg', alt: 'Knusprige Sushi-Rolle mit Lachs und Avocado' },
-        sushiMenu: { src: 'assets/images/menu-lachsmenue.jpg', alt: 'Sushi-Menü mit Nigiri, Maki und Inside-Out-Rollen' },
-        nigiri: { src: 'assets/images/menu-nigiri-premium.png', alt: 'Edle Nigiri-Auswahl mit Lachs, Thunfisch, Garnele und Weißfisch' },
-        gunkan: { src: 'assets/images/menu-gunkan-premium.png', alt: 'Gunkan-Sushi mit Lachsrogen, Thunfisch und Lachs' },
-        maki: { src: 'assets/images/menu-maki-premium.png', alt: 'Klassische Maki mit Lachs, Thunfisch, Gurke und Avocado' },
-        uramaki: { src: 'assets/images/menu-uramaki-premium.png', alt: 'Inside-Out Uramaki mit Lachs, Avocado und Gurke' },
-        tempuraRoll: { src: 'assets/images/menu-tempura-roll-premium.png', alt: 'Knusprige Tempura-Rolle mit Garnele und Avocado' },
-        tatakiSashimi: { src: 'assets/images/menu-tataki-sashimi-premium.png', alt: 'Thunfisch-Tataki und frisches Lachs-Sashimi' },
-        dessert: { src: 'assets/images/menu-kokos-panna-cotta.jpg', alt: 'Kokos-Panna-Cotta mit Mango und Passionsfrucht' },
-        friedBanana: { src: 'assets/images/menu-chuoi-chien.png', alt: 'Knusprig gebackene Banane mit Kokoseis' },
-        cocktails: { src: 'assets/images/sen-cocktails.jpg', alt: 'Auswahl frisch gemixter Cocktails' },
-        icedTea: { src: 'assets/images/sen-eistee.jpg', alt: 'Hausgemachte Eistees und alkoholfreie Drinks' },
-        beer: { src: 'assets/images/menu-asian-beer.png', alt: 'Gekühltes asiatisches Bier mit einem Glas Lager' }
+        appetizers: { src: 'assets/images/sen-vorspeisen.jpg', alt: 'Auswahl vietnamesischer Vorspeisen', position: '50% 58%' },
+        edamame: { src: 'assets/images/menu-edamame.jpg', alt: 'Edamame mit Meersalz', position: '50% 50%' },
+        fries: { src: 'assets/images/menu-pommes-premium.webp', alt: 'Knusprige Pommes frites mit Chili-Mayonnaise', position: '50% 48%' },
+        summerRolls: { src: 'assets/images/menu-goi-cuon.jpg', alt: 'Vietnamesische Sommerrollen mit frischen Kräutern', position: '50% 50%' },
+        gyoza: { src: 'assets/images/menu-gyoza-premium.webp', alt: 'Fünf goldbraun gebratene Gyoza mit Dip' },
+        haCao: { src: 'assets/images/menu-ha-cao-premium.webp', alt: 'Fünf gedämpfte Ha Cao mit Garnelenfüllung' },
+        nemRan: { src: 'assets/images/menu-nem-ran-premium.webp', alt: 'Drei knusprige vietnamesische Nem Rán mit Kräutern' },
+        chicken: { src: 'assets/images/sen-lemongrass-chicken.jpg', alt: 'Gegrillte Hähnchenbrust mit asiatischen Kräutern', position: '50% 54%' },
+        crispyPrawns: { src: 'assets/images/menu-tom-chien-com-premium.webp', alt: 'Knusprige Riesengarnelen im grünen Reismantel' },
+        calamari: { src: 'assets/images/menu-muc-chien-premium.webp', alt: 'Knusprige Tintenfischringe mit Dip' },
+        seafood: { src: 'assets/images/sen-meeresfruechte.jpg', alt: 'Gegrillte asiatische Meeresfrüchte', position: '50% 54%' },
+        salad: { src: 'assets/images/menu-mango-avocado-salad.webp', alt: 'Mango-Avocado-Salat mit Kräutern und Erdnüssen' },
+        coconutSoup: { src: 'assets/images/menu-kokos-suppe.webp', alt: 'Cremige Kokos-Suppe mit Pilzen und frischen Kräutern' },
+        misoSoup: { src: 'assets/images/menu-miso-suppe-premium.webp', alt: 'Miso-Suppe mit Tofu, Wakame und Frühlingszwiebeln' },
+        pho: { src: 'assets/images/sen-pho.jpg', alt: 'Aromatische vietnamesische Phở-Suppe', position: '56% 55%' },
+        phoBeef: { src: 'assets/images/menu-pho-rind.jpg', alt: 'Vietnamesische Phở-Suppe mit Rindfleisch und Kräutern', position: '50% 50%' },
+        sushi: { src: 'assets/images/sen-sushi-sashimi.jpg', alt: 'Auswahl an Sushi, Nigiri und Sashimi', position: '50% 52%' },
+        sushiRoll: { src: 'assets/images/menu-salmon-crunchy.jpg', alt: 'Knusprige Sushi-Rolle mit Lachs und Avocado', position: '50% 50%' },
+        sushiMenu: { src: 'assets/images/menu-lachsmenue.jpg', alt: 'Sushi-Menü mit Nigiri, Maki und Inside-Out-Rollen', position: '50% 50%' },
+        nigiri: { src: 'assets/images/menu-nigiri-premium.webp', alt: 'Edle Nigiri-Auswahl mit Lachs, Thunfisch, Garnele und Weißfisch' },
+        gunkan: { src: 'assets/images/menu-gunkan-premium.webp', alt: 'Gunkan-Sushi mit Lachsrogen, Thunfisch und Lachs' },
+        maki: { src: 'assets/images/menu-maki-premium.webp', alt: 'Klassische Maki mit Lachs, Thunfisch, Gurke und Avocado' },
+        uramaki: { src: 'assets/images/menu-uramaki-premium.webp', alt: 'Inside-Out Uramaki mit Lachs, Avocado und Gurke' },
+        tempuraRoll: { src: 'assets/images/menu-tempura-roll-premium.webp', alt: 'Knusprige Tempura-Rolle mit Garnele und Avocado' },
+        tatakiSashimi: { src: 'assets/images/menu-tataki-sashimi-premium.webp', alt: 'Thunfisch-Tataki und frisches Lachs-Sashimi' },
+        dessert: { src: 'assets/images/menu-kokos-panna-cotta.jpg', alt: 'Kokos-Panna-Cotta mit Mango und Passionsfrucht', position: '50% 50%' },
+        friedBanana: { src: 'assets/images/menu-chuoi-chien.webp', alt: 'Knusprig gebackene Banane mit Kokoseis' },
+        cocktails: { src: 'assets/images/sen-cocktails.jpg', alt: 'Auswahl frisch gemixter Cocktails', position: '53% 48%' },
+        icedTea: { src: 'assets/images/sen-eistee.jpg', alt: 'Hausgemachte Eistees und alkoholfreie Drinks', position: '52% 48%' },
+        beer: { src: 'assets/images/menu-asian-beer.webp', alt: 'Gekühltes asiatisches Bier mit einem Glas Lager' }
     };
 
     const categoryImages = new Map([
-        ['vorspeisen', [menuImages.gyoza, menuImages.haCao, menuImages.nemRan, menuImages.summerRolls]],
+        ['vorspeisen', [menuImages.edamame, menuImages.fries, menuImages.gyoza, menuImages.haCao, menuImages.nemRan, menuImages.summerRolls, menuImages.chicken, menuImages.crispyPrawns, menuImages.calamari, menuImages.seafood, menuImages.appetizers]],
         ['salate', [menuImages.salad]],
-        ['suppen', [menuImages.coconutSoup]],
+        ['suppen', [menuImages.coconutSoup, menuImages.misoSoup]],
         ['pho', [menuImages.pho, menuImages.phoBeef]],
         ['nigiri', [menuImages.nigiri]],
         ['gunkan', [menuImages.gunkan]],
@@ -206,12 +211,24 @@ document.addEventListener('DOMContentLoaded', () => {
     ]);
 
     const dishImages = new Map([
-        ['Edamame', { src: 'assets/images/menu-edamame.jpg', alt: 'Edamame mit Meersalz' }],
+        ['Edamame', menuImages.edamame],
+        ['Pommes frites', menuImages.fries],
         ['Gyoza - 5 St.', menuImages.gyoza],
         ['Ha Cao - 5 St.', menuImages.haCao],
         ['Nem Rán - 3 St.', menuImages.nemRan],
-        ['Gỏi Cuốn - 4 St.', { src: 'assets/images/menu-goi-cuon.jpg', alt: 'Vier vietnamesische Sommerrollen mit Erdnusssauce' }],
-        ['Phở Rindfleisch', { src: 'assets/images/menu-pho-rind.jpg', alt: 'Vietnamesische Phở-Suppe mit Rindfleisch und Kräutern' }],
+        ['Mini-Frühlingsrollen - 8 St.', menuImages.nemRan],
+        ['Gỏi Cuốn - 4 St.', menuImages.summerRolls],
+        ['Gà Xiên Lá Chanh - 2 St.', menuImages.chicken],
+        ['Tôm Chiên Cốm - 3 St.', menuImages.crispyPrawns],
+        ['Mực Chiên Giòn - 6 St.', menuImages.calamari],
+        ['Gegrillte Meeresfrüchte - 3 St.', menuImages.seafood],
+        ['Variante aus Vietnam', menuImages.appetizers],
+        ['Mango-Salat', menuImages.salad],
+        ['Avocado-Salat', menuImages.salad],
+        ['Kokos-Suppe', menuImages.coconutSoup],
+        ['Miso-Suppe', menuImages.misoSoup],
+        ['Phở Hühnerfleisch', menuImages.pho],
+        ['Phở Rindfleisch', menuImages.phoBeef],
         ['Kokos-Panna-Cotta', menuImages.dessert],
         ['Chuối Chiên', menuImages.friedBanana],
         ['Strawberry Colada', menuImages.cocktails],
@@ -221,41 +238,15 @@ document.addEventListener('DOMContentLoaded', () => {
     ]);
 
     document.querySelectorAll('.menu-category').forEach(category => {
-        const categoryGallery = categoryImages.get(category.id) || [];
+        const categoryGallery = categoryImages.get(category.id) || [menuImages.appetizers];
 
-        if (categoryGallery.length > 0) {
-            const gallery = document.createElement('div');
-            gallery.className = `menu-category-gallery menu-category-gallery-${Math.min(categoryGallery.length, 4)}`;
-            gallery.setAttribute('aria-label', `Bilder zu ${category.querySelector('.menu-category-title')?.textContent.trim() || 'dieser Kategorie'}`);
-
-            categoryGallery.forEach((dishImage, imageIndex) => {
-                const figure = document.createElement('figure');
-                figure.className = 'menu-category-visual';
-                figure.style.setProperty('--image-index', imageIndex);
-
-                const image = document.createElement('img');
-                image.dataset.src = dishImage.src;
-                image.alt = dishImage.alt;
-                image.width = 1024;
-                image.height = 1024;
-                image.loading = 'lazy';
-                image.decoding = 'async';
-
-                figure.appendChild(image);
-                gallery.appendChild(figure);
-            });
-
-            const categoryIntro = category.querySelector('.menu-category-desc') || category.querySelector('.menu-category-title');
-            categoryIntro?.insertAdjacentElement('afterend', gallery);
-        }
-
-        category.querySelectorAll('.menu-item').forEach(menuItem => {
+        category.querySelectorAll('.menu-item').forEach((menuItem, itemIndex) => {
             const dishName = menuItem.querySelector('.menu-item-name')?.textContent.trim();
-            const dishImage = dishImages.get(dishName);
-            if (!dishImage) return;
+            const dishImage = dishImages.get(dishName) || categoryGallery[itemIndex % categoryGallery.length];
 
             const media = document.createElement('figure');
             media.className = 'menu-item-media';
+            media.style.setProperty('--dish-position', dishImage.position || '50% 50%');
 
             const image = document.createElement('img');
             image.dataset.src = dishImage.src;
@@ -268,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
             media.appendChild(image);
             menuItem.prepend(media);
             menuItem.classList.add('has-dish-image');
+            menuItem.style.setProperty('--item-index', itemIndex);
         });
     });
 
