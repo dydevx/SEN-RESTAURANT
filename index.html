@@ -208,7 +208,8 @@
 
         <div class="menu-nav">
           <div class="menu-nav-wrapper">
-            <button class="menu-tab active" data-category="vorspeisen">Vorspeisen</button>
+            <button class="menu-tab active" data-category="mittagsmenu">Mittagsmenü</button>
+            <button class="menu-tab" data-category="vorspeisen">Vorspeisen</button>
             <button class="menu-tab" data-category="salate">Salate</button>
             <button class="menu-tab" data-category="suppen">Suppen</button>
             <button class="menu-tab" data-category="pho">Phở</button>
@@ -230,12 +231,93 @@
             <button class="menu-tab" data-category="softdrinks">Softdrinks</button>
             <button class="menu-tab" data-category="warme-getraenke">Warme Getränke</button>
             <button class="menu-tab" data-category="schaumwein">Schaumwein</button>
+            <button class="menu-tab" data-category="allergene">Allergene &amp; Zusatzstoffe</button>
           </div>
         </div>
 
         <div class="menu-content">
+          <!-- MITTAGSMENÜ -->
+          <div class="menu-category active" id="mittagsmenu">
+            <h3 class="menu-category-title">Mittagsmenü</h3>
+            <p class="menu-category-desc" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">Alle Gerichte werden mit Jasminreis serviert und können Spuren von Sesam enthalten.</p>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Gebratenes Gemüse in Rote-Curry-Soße</span></div>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M11 · Knuspriges Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M12 · Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M13 · Hähnchenbrust</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M14 · Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M15 · Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M16 · Knusprige Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Gebratenes Gemüse in Erdnusssoße</span></div>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M21 · Knuspriges Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M22 · Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M23 · Hähnchenbrust</span><span class="menu-variant-dots"></span><span class="menu-variant-price">10,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M24 · Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">10,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M25 · Knusprige Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Gebratenes Gemüse mit Austern-Soße</span></div>
+                <p class="menu-item-desc">Mit Zitronengras und Knoblauch.</p>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M41 · Hähnchenbrust</span><span class="menu-variant-dots"></span><span class="menu-variant-price">10,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M42 · Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M43 · Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">10,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M44 · Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M45 · Knusprige Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Gebratener Eierreis mit Gemüse</span></div>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M46 · Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,50 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M47 · Ente kross</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M48 · Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">10,50 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M49 · Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M50 · Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-number">M60</span><span class="menu-item-name">Mix Bowl</span><span class="menu-item-dots"></span><span class="menu-item-price">12,90 €</span></div>
+                <p class="menu-item-desc">Sushi-Reis mit Salat, Edamame, Mango, Avocado, Granatapfel, Seetang in Sesam-Wasabi-Dressing, Tempura-Großgarnele, Lachs-Tempura und Thunfisch-Tempura.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Phở Suppe (groß)</span></div>
+                <p class="menu-item-desc">Reisbandnudeln, Frühlingszwiebeln, asiatische Kräuter, Koriander und Sojasprossen.</p>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M62 · Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M63 · Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">12,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Mittagsmenü · Sushi</span></div>
+                <p class="menu-item-desc">Keine Änderungen bei den Sushi-Menüs möglich. Kann Spuren von Sesam und Bio-Kresse enthalten.</p>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M64 · 6 Sake Maki, 6 Tuna Maki, 6 Kappa Maki, Wakame-Salat</span><span class="menu-variant-dots"></span><span class="menu-variant-price">11,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M65 · 8 Salmon Skin Inside Out, 6 Avocado Maki, 1 Sake Nigiri, Wakame-Salat</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M66 · 8 Vegan Mini Crunchy, 6 Avocado Maki, 6 Kappa Maki, Wakame-Salat</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Hausgemachte Eistees &amp; Mixgetränke</span></div>
+                <div class="menu-item-variants">
+                  <div class="menu-variant"><span class="menu-variant-name">M70 · Lemon Eistee</span><span class="menu-variant-dots"></span><span class="menu-variant-price">4,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M71 · Lychee Rose Eistee</span><span class="menu-variant-dots"></span><span class="menu-variant-price">4,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M72 · Tropical Eistee</span><span class="menu-variant-dots"></span><span class="menu-variant-price">4,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">M73 · Hausgemachte Limonade</span><span class="menu-variant-dots"></span><span class="menu-variant-price">4,90 €</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- VORSPEISEN -->
-          <div class="menu-category active" id="vorspeisen">
+          <div class="menu-category" id="vorspeisen">
             <h3 class="menu-category-title">Vorspeisen</h3>
             <div class="menu-grid">
               <div class="menu-item">
@@ -324,25 +406,25 @@
                   <div class="menu-variant">
                     <span class="menu-variant-name">Tofu</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">6,50 €</span>
+                    <span class="menu-variant-price">5,50 €</span>
                   </div>
                   <span class="menu-item-allergens">Allergene: B, M</span>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Rindfleisch</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">7,50 €</span>
+                    <span class="menu-variant-price">6,50 €</span>
                   </div>
                   <span class="menu-item-allergens">Allergene: B</span>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Gekochter Lachs</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">7,50 €</span>
+                    <span class="menu-variant-price">6,50 €</span>
                   </div>
                   <span class="menu-item-allergens">Allergene: B, C</span>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Knuspriges Hähnchen</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">6,90 €</span>
+                    <span class="menu-variant-price">5,90 €</span>
                   </div>
                   <span class="menu-item-allergens">Allergene: B, D</span>
                 </div>
@@ -433,32 +515,32 @@
                   <div class="menu-variant">
                     <span class="menu-variant-name">Tofu-Tempura</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">9,90 €</span>
+                    <span class="menu-variant-price">8,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Rinderfilet</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">10,90 €</span>
+                    <span class="menu-variant-price">9,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Gegrillte Hähnchenbrust</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">10,90 €</span>
+                    <span class="menu-variant-price">9,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Ente</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">11,90 €</span>
+                    <span class="menu-variant-price">10,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Garnelen</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">11,90 €</span>
+                    <span class="menu-variant-price">10,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Tintenfisch</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">11,90 €</span>
+                    <span class="menu-variant-price">10,90 €</span>
                   </div>
                 </div>
               </div>
@@ -473,22 +555,22 @@
                   <div class="menu-variant">
                     <span class="menu-variant-name">Tofu-Tempura</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">10,90 €</span>
+                    <span class="menu-variant-price">9,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Flambierter Lachs</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">15,90 €</span>
+                    <span class="menu-variant-price">14,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Gegrillte Hähnchenbrust</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">13,90 €</span>
+                    <span class="menu-variant-price">12,90 €</span>
                   </div>
                   <div class="menu-variant">
                     <span class="menu-variant-name">Flambierter Thunfisch</span>
                     <span class="menu-variant-dots"></span>
-                    <span class="menu-variant-price">15,90 €</span>
+                    <span class="menu-variant-price">14,90 €</span>
                   </div>
                 </div>
               </div>
@@ -558,34 +640,27 @@
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-name">Phở Hühnerfleisch</span>
+                  <span class="menu-item-number">17.</span>
+                  <span class="menu-item-name">Phở Suppe</span>
                 </div>
                 <div class="menu-item-variants">
                   <div class="menu-variant">
-                    <span class="menu-variant-name">Klein</span>
+                    <span class="menu-variant-name">A · Hühnerfleisch (klein)</span>
                     <span class="menu-variant-dots"></span>
                     <span class="menu-variant-price">9,50 €</span>
                   </div>
                   <div class="menu-variant">
-                    <span class="menu-variant-name">Groß</span>
+                    <span class="menu-variant-name">A · Hühnerfleisch (groß)</span>
                     <span class="menu-variant-dots"></span>
                     <span class="menu-variant-price">16,90 €</span>
                   </div>
-                </div>
-              </div>
-
-              <div class="menu-item">
-                <div class="menu-item-header">
-                  <span class="menu-item-name">Phở Rindfleisch</span>
-                </div>
-                <div class="menu-item-variants">
                   <div class="menu-variant">
-                    <span class="menu-variant-name">Klein</span>
+                    <span class="menu-variant-name">B · Rindfleisch (klein)</span>
                     <span class="menu-variant-dots"></span>
                     <span class="menu-variant-price">9,50 €</span>
                   </div>
                   <div class="menu-variant">
-                    <span class="menu-variant-name">Groß</span>
+                    <span class="menu-variant-name">B · Rindfleisch (groß)</span>
                     <span class="menu-variant-dots"></span>
                     <span class="menu-variant-price">16,90 €</span>
                   </div>
@@ -605,12 +680,12 @@
                 </div>
                 <p class="menu-item-desc">Warme Reisnudeln mit eingelegtem Gemüse, Salat, Gurken, Sojasprossen, asiatischen Kräutern, Röstzwiebeln, Erdnüssen und Sesam. Dazu Fischsoße.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">15,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Vietnamesische Frühlingsrollen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Gebratener Lachs</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Vietnamesische Frühlingsrollen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Gebratener Lachs</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -621,12 +696,12 @@
                 </div>
                 <p class="menu-item-desc">Scharf, mit Saisongemüse, Kokosmilch-Soße und Jasminreis.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -637,12 +712,12 @@
                 </div>
                 <p class="menu-item-desc">Mango-Creme, verfeinert mit Kokosmilch, Reis und Saisongemüse.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -653,12 +728,12 @@
                 </div>
                 <p class="menu-item-desc">Erdnuss-Creme, verfeinert mit Kokosmilch, Saisongemüse, Reis und Salat-Mix.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -669,12 +744,12 @@
                 </div>
                 <p class="menu-item-desc">Saisongemüse, Tomaten, Ananas und Zuckerschoten, dazu Jasminreis.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -685,12 +760,12 @@
                 </div>
                 <p class="menu-item-desc">Gebratene Udon-Nudeln, frisches Gemüse und Sesam, dazu Teriyaki-Soße.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
                 </div>
               </div>
 
@@ -701,13 +776,13 @@
                 </div>
                 <p class="menu-item-desc">Gebratenes Gemüse mit Austernsoße und Jasminreis.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">17,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">19,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">15,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Tofu</span><span class="menu-variant-dots"></span><span class="menu-variant-price">13,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Rindfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Ente</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knuspriges Hähnchen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">16,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Knusprige Tilapia</span><span class="menu-variant-dots"></span><span class="menu-variant-price">18,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Hühnerfleisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">14,90 €</span></div>
                 </div>
               </div>
 
@@ -718,11 +793,11 @@
                 </div>
                 <p class="menu-item-desc">Serviert mit gebratenem Gemüse, BBQ-Soße und spezieller Grillsoße, dazu Reis.</p>
                 <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">Lachsfilet, ca. 300 g</span><span class="menu-variant-dots"></span><span class="menu-variant-price">23,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Lachsfilet, ca. 300 g</span><span class="menu-variant-dots"></span><span class="menu-variant-price">22,90 €</span></div>
                   <div class="menu-variant"><span class="menu-variant-name">Entenbrustfilet, ca. 300 g</span><span class="menu-variant-dots"></span><span class="menu-variant-price">24,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Garnelen, 6 St.</span><span class="menu-variant-dots"></span><span class="menu-variant-price">23,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Thunfisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">24,90 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">Meeresfrüchte-Mix, 450 g</span><span class="menu-variant-dots"></span><span class="menu-variant-price">29,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Garnelen, 6 St.</span><span class="menu-variant-dots"></span><span class="menu-variant-price">22,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Thunfisch</span><span class="menu-variant-dots"></span><span class="menu-variant-price">23,90 €</span></div>
+                  <div class="menu-variant"><span class="menu-variant-name">Meeresfrüchte-Mix, 450 g</span><span class="menu-variant-dots"></span><span class="menu-variant-price">28,90 €</span></div>
                 </div>
               </div>
             </div>
@@ -738,7 +813,7 @@
                   <span class="menu-item-number">N1</span>
                   <span class="menu-item-name">Sake - Lachs</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">6,90 €</span>
+                  <span class="menu-item-price">5,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -746,7 +821,7 @@
                   <span class="menu-item-number">N2</span>
                   <span class="menu-item-name">Aburi Salmon - Flambierter Lachs</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">6,90 €</span>
+                  <span class="menu-item-price">5,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -754,7 +829,7 @@
                   <span class="menu-item-number">N3</span>
                   <span class="menu-item-name">Maguro - Thunfisch</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">6,90 €</span>
+                  <span class="menu-item-price">5,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -762,7 +837,7 @@
                   <span class="menu-item-number">N4</span>
                   <span class="menu-item-name">Aburi Tuna - Flambierter Thunfisch</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">6,90 €</span>
+                  <span class="menu-item-price">5,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -770,7 +845,7 @@
                   <span class="menu-item-number">N5</span>
                   <span class="menu-item-name">Ebi - Gekochte Garnelen</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">5,90 €</span>
+                  <span class="menu-item-price">4,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -778,7 +853,7 @@
                   <span class="menu-item-number">N6</span>
                   <span class="menu-item-name">Avocado</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">5,00 €</span>
+                  <span class="menu-item-price">4,00 €</span>
                 </div>
               </div>
               <div class="menu-item">
@@ -786,7 +861,7 @@
                   <span class="menu-item-number">N7</span>
                   <span class="menu-item-name">Unagi - Aal</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">7,90 €</span>
+                  <span class="menu-item-price">6,90 €</span>
                 </div>
               </div>
             </div>
@@ -798,23 +873,26 @@
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
+                  <span class="menu-item-number">G1</span>
                   <span class="menu-item-name">Flambierter Lachs Tatar</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">7,90 €</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <span class="menu-item-number">G2</span>
+                  <span class="menu-item-name">Flambierter Thunfisch</span>
                   <span class="menu-item-dots"></span>
                   <span class="menu-item-price">8,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-name">Flambierter Thunfisch</span>
-                  <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-header">
+                  <span class="menu-item-number">G3</span>
                   <span class="menu-item-name">Tofu Tatar</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">7,90 €</span>
+                  <span class="menu-item-price">6,90 €</span>
                 </div>
               </div>
             </div>
@@ -929,21 +1007,21 @@
           <!-- URAMAKI -->
           <div class="menu-category" id="uramaki">
             <h3 class="menu-category-title">Uramaki</h3>
-            <p class="menu-category-desc" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">Preis: 15,90 €</p>
+            <p class="menu-category-desc" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">Preis: 13,90 €</p>
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
                   <span class="menu-item-number">U1</span>
-                  <span class="menu-item-name">Tempura Garnelen</span>
+                  <span class="menu-item-name">Sake Fancy</span>
                 </div>
-                <p class="menu-item-desc">Cream-Cheese, Avocado, Mango, flambierter Lachs und spezielle Soße</p>
+                <p class="menu-item-desc">Tempura Garnelen, Cream-Cheese, Avocado, Mango, flambierter Lachs und spezielle Soße</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
                   <span class="menu-item-number">U2</span>
-                  <span class="menu-item-name">Ebi Tempura</span>
+                  <span class="menu-item-name">Mama Ebi</span>
                 </div>
-                <p class="menu-item-desc">Gurke, Frischkäse und Avocado-Mantel</p>
+                <p class="menu-item-desc">Ebi Tempura, Gurke, Frischkäse und Avocado-Mantel</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
@@ -976,16 +1054,18 @@
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
+                  <span class="menu-item-number">A</span>
                   <span class="menu-item-name">Lachs-Tataki</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">20,00 €</span>
+                  <span class="menu-item-price">18,90 €</span>
                 </div>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
+                  <span class="menu-item-number">B</span>
                   <span class="menu-item-name">Thunfisch</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">21,00 €</span>
+                  <span class="menu-item-price">18,90 €</span>
                 </div>
               </div>
             </div>
@@ -994,7 +1074,7 @@
           <!-- TEMPURA ROLLS -->
           <div class="menu-category" id="tempura-rolls">
             <h3 class="menu-category-title">Tempura Rolls</h3>
-            <p class="menu-category-desc" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">10 Stück - 14,90 €</p>
+            <p class="menu-category-desc" style="margin-bottom: 24px; color: rgba(255,255,255,0.7);">10 Stück - 13,90 €</p>
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
@@ -1047,48 +1127,57 @@
             <div class="menu-grid">
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">M1</span>
+                  <span class="menu-item-number">SET1</span>
                   <span class="menu-item-name">Lachsmenü</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">23,90 €</span>
+                  <span class="menu-item-price">21,90 €</span>
                 </div>
                 <p class="menu-item-desc">6 St. Maki · 10 St. Sake Crunchy · 3 St. Nigiri Sake</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">M2</span>
+                  <span class="menu-item-number">SET2</span>
                   <span class="menu-item-name">Tuna Menü</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">23,90 €</span>
+                  <span class="menu-item-price">21,90 €</span>
                 </div>
                 <p class="menu-item-desc">6 St. Maki Tuna · 10 St. Thunfisch Crunchy · 2 St. Nigiri</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">M3</span>
+                  <span class="menu-item-number">SET3</span>
                   <span class="menu-item-name">Veggie Menü</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">17,50 €</span>
+                  <span class="menu-item-price">15,50 €</span>
                 </div>
                 <p class="menu-item-desc">6 St. Avocado Maki · 8 St. Veggie Inside Out · 2 St. Avocado Nigiri</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">M4</span>
+                  <span class="menu-item-number">SET4</span>
+                  <span class="menu-item-name">Menü für 2 Personen</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-price">51,90 €</span>
+                </div>
+                <p class="menu-item-desc">6 St. Maki Lachs · 8 St. Sen Roll · 5 St. Sashimi Mix · 2 St. Lachs Gunkan · 10 St. Ebi Crunchy · 2 St. Nigiri Thunfisch</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header">
+                  <span class="menu-item-number">SET5</span>
                   <span class="menu-item-name">Menü für 3 Personen</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">85,90 €</span>
+                  <span class="menu-item-price">83,90 €</span>
                 </div>
                 <p class="menu-item-desc">12 St. Maki Mix · 8 St. Lachs Inside Out · 8 St. Sen Roll · 5 St. Sashimi Mix · 2 St. Lachs Nigiri · 2 St. Gunkan Thunfisch · 10 St. Lachs Tempura · 8 St. King Avocado</p>
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">M5</span>
-                  <span class="menu-item-name">Menü für 2 Personen</span>
+                  <span class="menu-item-number">SET6</span>
+                  <span class="menu-item-name">Party Mix (120 St.)</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price"><span class="price-placeholder">Preis auf Anfrage</span></span>
+                  <span class="menu-item-price">110,00 €</span>
                 </div>
-                <p class="menu-item-desc">6 St. Maki Lachs · 8 St. Sen Roll · 5 St. Sashimi Mix · 2 St. Lachs Gunkan · 10 St. Ebi Crunchy · 2 St. Nigiri Thunfisch</p>
+                <p class="menu-item-desc">Persönlich vom Küchenchef und Inhaber zubereitet. Verschiedene Sushi-Formen und Zutaten – lassen Sie sich überraschen.</p>
               </div>
             </div>
           </div>
@@ -1102,7 +1191,7 @@
                   <span class="menu-item-number">171.</span>
                   <span class="menu-item-name">Kokos-Panna-Cotta</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">7,90 €</span>
+                  <span class="menu-item-price">6,90 €</span>
                 </div>
                 <p class="menu-item-desc">Mit Grüntee-Eis.</p>
               </div>
@@ -1111,7 +1200,7 @@
                   <span class="menu-item-number">172.</span>
                   <span class="menu-item-name">Chuối Chiên</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">7,90 €</span>
+                  <span class="menu-item-price">6,90 €</span>
                 </div>
                 <p class="menu-item-desc">Gebackene Banane mit Honig und Erdnüssen, dazu Vanilleeis.</p>
               </div>
@@ -1127,7 +1216,7 @@
                   <span class="menu-item-number">100.</span>
                   <span class="menu-item-name">Mojito</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
+                  <span class="menu-item-price">8,90 €</span>
                 </div>
                 <p class="menu-item-desc">Rum · Limettensaft · Rohrzuckersirup · Minze · Soda</p>
               </div>
@@ -1136,7 +1225,7 @@
                   <span class="menu-item-number">101.</span>
                   <span class="menu-item-name">Mai Tai Hawaii</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
+                  <span class="menu-item-price">8,90 €</span>
                 </div>
                 <p class="menu-item-desc">Rum · Triple Sec · Zitronensaft · Orangensaft · Ananassaft · Erdbeersirup</p>
               </div>
@@ -1145,7 +1234,7 @@
                   <span class="menu-item-number">102.</span>
                   <span class="menu-item-name">Strawberry Colada</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
+                  <span class="menu-item-price">8,90 €</span>
                 </div>
                 <p class="menu-item-desc">Rum · Erdbeersirup · Kokossirup · Ananassaft</p>
               </div>
@@ -1154,7 +1243,7 @@
                   <span class="menu-item-number">103.</span>
                   <span class="menu-item-name">Hugo</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
+                  <span class="menu-item-price">8,90 €</span>
                 </div>
                 <p class="menu-item-desc">Prosecco · Holunderblütensirup · Limette · Minze · Sodawasser</p>
               </div>
@@ -1163,7 +1252,7 @@
                   <span class="menu-item-number">104.</span>
                   <span class="menu-item-name">Aperol Spritz</span>
                   <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">9,90 €</span>
+                  <span class="menu-item-price">8,90 €</span>
                 </div>
                 <p class="menu-item-desc">Aperol · Prosecco · Sodawasser · Orange</p>
               </div>
@@ -1326,14 +1415,6 @@
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">238.</span>
-                  <span class="menu-item-name">Saigon Bier 0,33 L</span>
-                  <span class="menu-item-dots"></span>
-                  <span class="menu-item-price">5,90 €</span>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-header">
                   <span class="menu-item-number">239.</span>
                   <span class="menu-item-name">Singha Bier 0,33 L</span>
                   <span class="menu-item-dots"></span>
@@ -1371,20 +1452,10 @@
               </div>
               <div class="menu-item">
                 <div class="menu-item-header">
-                  <span class="menu-item-number">244.</span>
-                  <span class="menu-item-name">Tafelwasser mit Kohlensäure</span>
-                </div>
-                <div class="menu-item-variants">
-                  <div class="menu-variant"><span class="menu-variant-name">0,2 L</span><span class="menu-variant-dots"></span><span class="menu-variant-price">2,50 €</span></div>
-                  <div class="menu-variant"><span class="menu-variant-name">0,4 L</span><span class="menu-variant-dots"></span><span class="menu-variant-price">3,90 €</span></div>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-header">
                   <span class="menu-item-number">245.</span>
-                  <span class="menu-item-name">Selters Gourmet</span>
+                  <span class="menu-item-name">Flasche Wasser</span>
                 </div>
-                <p class="menu-item-desc">Classic oder Still.</p>
+                <p class="menu-item-desc">Classic oder Still von Selters Gülinaral.</p>
                 <div class="menu-item-variants">
                   <div class="menu-variant"><span class="menu-variant-name">0,25 L</span><span class="menu-variant-dots"></span><span class="menu-variant-price">3,00 €</span></div>
                   <div class="menu-variant"><span class="menu-variant-name">0,5 L</span><span class="menu-variant-dots"></span><span class="menu-variant-price">4,90 €</span></div>
@@ -1428,6 +1499,9 @@
                 <div class="menu-item-header"><span class="menu-item-number">284.</span><span class="menu-item-name">SEN Tee</span><span class="menu-item-dots"></span><span class="menu-item-price">5,00 €</span></div>
                 <p class="menu-item-desc">Jasmintee, Zitronengras, Orangenscheiben, Minze und ein Schuss Honig.</p>
               </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-number">285.</span><span class="menu-item-name">Kaffee / Espresso</span><span class="menu-item-dots"></span><span class="menu-item-price">2,90 €</span></div>
+              </div>
             </div>
           </div>
 
@@ -1446,6 +1520,22 @@
                 <div class="menu-item-header"><span class="menu-item-number">252.</span><span class="menu-item-name">Sasbacher Spätburgunder, 0,1 L</span><span class="menu-item-dots"></span><span class="menu-item-price">4,90 €</span></div>
               </div>
             </div>
+          </div>
+
+          <!-- ALLERGENE & ZUSATZSTOFFE -->
+          <div class="menu-category" id="allergene">
+            <h3 class="menu-category-title">Allergene &amp; Zusatzstoffe</h3>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Allergene</span></div>
+                <p class="menu-item-desc">A · Eier<br>B · Erdnüsse<br>C · Fisch<br>D · Glutenhaltiges Getreide (Weizen)<br>E · Krebstiere<br>F · Lupinen<br>G · Milch<br>H · Schalenfrüchte<br>I · Schwefeldioxid und Sulfite<br>J · Sellerie<br>K · Senf<br>L · Sesamsamen<br>M · Soja<br>N · Weichtiere (Mollusken)</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-header"><span class="menu-item-name">Zusatzstoffe</span></div>
+                <p class="menu-item-desc">1 · mit Farbstoff<br>2 · coffeinhaltig<br>3 · mit Antioxidationsmittel<br>4 · Säuerungsmittel<br>5 · mit Konservierungsmittel<br>6 · mit Süßstoff<br>7 · enthält eine Phenylalaninquelle<br>8 · chininhaltig<br>9 · Stabilisatoren<br>10 · aufgeschäumt mit Stickoxydul</p>
+              </div>
+            </div>
+            <p class="menu-category-desc" style="margin-top: 24px; color: rgba(255,255,255,0.7);">Änderungen und Irrtümer vorbehalten. Abbildungen ähnlich. Preise in Euro inklusive MwSt.</p>
           </div>
         </div>
       </div>

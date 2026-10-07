@@ -156,13 +156,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Default to first tab (vorspeisen) if exists
+    // Default to the first menu tab if it exists
     if (menuTabs.length > 0) {
         // Ensure default is selected on load
         menuTabs[0].click();
     }
 
     const categoryImages = new Map([
+        ['mittagsmenu', { src: 'assets/images/menu-cover-hauptgerichte.jpeg', alt: 'Auswahl aus dem Mittagsmenü mit vietnamesischen Hauptgerichten', position: '50% 54%' }],
         ['vorspeisen', { src: 'assets/images/menu-cover-vorspeisen.jpeg', alt: 'Sommerrollen und vietnamesische Vorspeisen', position: '50% 48%' }],
         ['salate', { src: 'assets/images/menu-mango-avocado-salad.webp', alt: 'Mango-Avocado-Salat mit Kräutern und Erdnüssen', position: '50% 50%' }],
         ['suppen', { src: 'assets/images/menu-kokos-suppe.webp', alt: 'Cremige Kokos-Suppe mit Pilzen und Kräutern', position: '50% 50%' }],
@@ -188,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]);
 
     const desktopCategoryImages = new Map([
+        ['mittagsmenu', 'assets/images/menu-hero-hauptgerichte.png'],
         ['vorspeisen', 'assets/images/menu-hero-vorspeisen.png'],
         ['salate', 'assets/images/menu-hero-salate.png'],
         ['suppen', 'assets/images/menu-hero-suppen.png'],
