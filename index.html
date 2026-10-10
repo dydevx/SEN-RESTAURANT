@@ -1690,7 +1690,9 @@
               <label class="form-label" for="message">Nachricht / Wünsche</label>
               <textarea class="form-input form-textarea" id="message" name="message" placeholder="Besondere Wünsche oder Anmerkungen..." style="width: 100%; padding: 12px; margin-top: 8px; min-height: 100px;"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Reservierung anfragen</button>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" aria-describedby="reservation-hint">Reservierung per WhatsApp anfragen</button>
+            <p id="reservation-hint" style="margin-top: 16px;">Ihre Anfrage wird als Nachricht in WhatsApp geöffnet. Bitte dort absenden und die Bestätigung des Restaurants abwarten.</p>
+            <p class="form-success" id="reservation-status" role="status" aria-live="polite" aria-atomic="true" hidden style="margin-top: 20px; padding: 15px;"></p>
           </form>
         </div>
       </div>

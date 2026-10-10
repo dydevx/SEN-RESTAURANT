@@ -1,6 +1,8 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const WHATSAPP_NUMBER = '491735467301';
+
     // ==========================================
     // 1. Header Scroll Effect
     // ==========================================
@@ -291,57 +293,80 @@ document.addEventListener('DOMContentLoaded', () => {
     // 7. Reservation Form
     // ==========================================
     const reservationForm = document.getElementById('reservation-form');
-    
+
     if (reservationForm) {
+        const dateField = reservationForm.elements.namedItem('date');
+        const timeField = reservationForm.elements.namedItem('time');
+        const reservationStatus = document.getElementById('reservation-status');
+        const requiredFields = reservationForm.querySelectorAll('[required]');
+
+        const updateMinimumDate = () => {
+            const today = new Date();
+            const pad = value => String(value).padStart(2, '0');
+            dateField.min = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
+        };
+        updateMinimumDate();
+
+        reservationForm.addEventListener('invalid', event => {
+            event.target.classList.add('error');
+            event.target.setAttribute('aria-invalid', 'true');
+            reservationStatus.hidden = true;
+        }, true);
+
+        reservationForm.addEventListener('input', event => {
+            const field = event.target;
+            field.setCustomValidity('');
+            field.classList.remove('error');
+            field.removeAttribute('aria-invalid');
+            reservationStatus.hidden = true;
+            if (field === dateField) {
+                timeField.setCustomValidity('');
+                timeField.classList.remove('error');
+                timeField.removeAttribute('aria-invalid');
+            }
+        });
+
         reservationForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
-            // Basic validation
-            const requiredFields = reservationForm.querySelectorAll('[required]');
-            let isValid = true;
-            
+            updateMinimumDate();
+            reservationStatus.hidden = true;
+
             requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
-                
-                if (field.type === 'email') {
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!emailRegex.test(field.value)) {
-                        isValid = false;
-                        field.classList.add('error');
-                    }
-                }
+                field.setCustomValidity(field.value.trim() ? '' : 'Bitte füllen Sie dieses Feld aus.');
             });
 
-            if (isValid) {
-                // Show success message without claiming it was fully submitted
-                let successMsg = reservationForm.querySelector('.form-success');
-                if (!successMsg) {
-                    successMsg = document.createElement('div');
-                    successMsg.className = 'form-success';
-                    successMsg.style.marginTop = '20px';
-                    successMsg.style.padding = '15px';
-                    successMsg.style.backgroundColor = 'rgba(76, 175, 80, 0.1)';
-                    // We assume CSS variables exist or standard colors
-                    successMsg.style.color = '#4CAF50'; 
-                    successMsg.style.border = '1px solid #4CAF50';
-                    successMsg.style.borderRadius = '4px';
-                    successMsg.style.textAlign = 'center';
-                    reservationForm.appendChild(successMsg);
-                }
-                
-                successMsg.textContent = 'Vielen Dank! Ihre Reservierungsanfrage wurde vorbereitet. Bitte kontaktieren Sie uns telefonisch zur Bestätigung.';
-                reservationForm.reset();
-                
-                // Hide message after 8 seconds
-                setTimeout(() => {
-                    successMsg.remove();
-                }, 8000);
+            if (dateField.value && timeField.value &&
+                new Date(`${dateField.value}T${timeField.value}`) <= new Date()) {
+                timeField.setCustomValidity('Bitte wählen Sie einen zukünftigen Reservierungszeitpunkt.');
             }
+            if (!reservationForm.reportValidity()) return;
+
+            const values = new FormData(reservationForm);
+            const [year, month, day] = values.get('date').split('-');
+            const personsField = reservationForm.elements.namedItem('persons');
+            const message = values.get('message').trim();
+            const messageLines = [
+                'NEUE RESERVIERUNGSANFRAGE - SEN RESTAURANT',
+                `Name: ${values.get('name').trim()}`,
+                `Telefon: ${values.get('phone').trim()}`,
+                `E-Mail: ${values.get('email').trim()}`,
+                `Datum: ${day}.${month}.${year}`,
+                `Uhrzeit: ${values.get('time')} Uhr`,
+                `Anzahl Personen: ${personsField.selectedOptions[0].textContent}`,
+                ...(message ? ['', `Nachricht / Wünsche: ${message}`] : []),
+                '',
+                'Bitte bestätigen Sie die Reservierung. Vielen Dank!'
+            ];
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(messageLines.join('\n'))}`;
+            const whatsappWindow = window.open(whatsappUrl, '_blank');
+            if (whatsappWindow) {
+                whatsappWindow.opener = null;
+            } else {
+                window.location.href = whatsappUrl;
+            }
+
+            reservationStatus.textContent = 'Ihre Reservierungsanfrage ist für WhatsApp vorbereitet. Bitte senden Sie die Nachricht dort ab und warten Sie auf die Bestätigung des Restaurants.';
+            reservationStatus.hidden = false;
         });
     }
 
@@ -431,7 +456,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 11. Warenkorb & WhatsApp-Bestellung
     // ==========================================
-    const WHATSAPP_NUMBER = '491735467301';
     const CART_STORAGE_KEY = 'sen-restaurant-cart-v1';
     const cartDrawer = document.getElementById('cartDrawer');
     const cartBackdrop = document.getElementById('cartBackdrop');
